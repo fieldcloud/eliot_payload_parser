@@ -1,0 +1,492 @@
+{
+    "universal":{
+        "codes_size": 16,
+        "codes":[
+               {
+                   "name": "experimentation",
+                   "start": 0,
+                   "length": 4,
+                   "type": "string"
+               },
+               {
+                   "name": "device_code",
+                   "start": 4,
+                   "length": 4,
+                   "type": "string"
+               },
+               {
+                   "name": "battery",
+                   "start": 8,
+                   "length": 4,
+                   "type": "float",
+                   "factor": 100
+               },
+               {
+                   "name": "sensor_code",
+                   "start": 12,
+                   "length": 4,
+                   "type": "string"
+               }
+            ],
+        "sensors":{
+            "0001":{
+                "name": "Temperature & Humidity",
+                "payload_length": 32,
+                "values": [
+                   {
+                       "name": "temperature",
+                       "start": 16,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "humidity",
+                       "start": 20,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "temperature_min",
+                       "start": 24,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "temperature_max",
+                       "start": 28,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "temperature_average",
+                       "start": 32,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "humidity_min",
+                       "start": 36,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "humidity_max",
+                       "start": 40,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "humidity_average",
+                       "start": 44,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   }
+                ]
+            },
+            "0002":{
+                "name": "Barometer",
+                "payload_length": 32,
+                "values": [
+                   {
+                       "name": "pressure",
+                       "start": 16,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "temperature",
+                       "start": 20,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "pressure_min",
+                       "start": 24,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "pressure_max",
+                       "start": 28,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "pressure_average",
+                       "start": 32,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "temperature_min",
+                       "start": 36,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "temperature_max",
+                       "start": 40,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "temperature_average",
+                       "start": 44,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   }
+                ]
+            },
+            "0003":{
+                "name": "Water level",
+                "payload_length": 8,
+                "values": [
+                   {
+                       "name": "immersed",
+                       "start": 16,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "immersed_counter",
+                       "start": 20,
+                       "length": 4,
+                       "type": "int"
+                   }
+                ]
+            },
+            "0004":{
+                "name": "GPS",
+                "payload_length": 32,
+                "values": [
+                ]
+            },
+            "0005":{
+                "name": "Ultrasonic_ranger",
+                "payload_length": 20,
+                "values": [
+                   {
+                       "name": "distance",
+                       "start": 16,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "passages",
+                       "start": 20,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "distance_min",
+                       "start": 24,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "distance_max",
+                       "start": 28,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "distance_average",
+                       "start": 32,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   }
+                ]
+            },
+            "0006":{
+                "name": "Soil moisture",
+                "payload_length": 16,
+                "values": [
+                   {
+                       "name": "moisture",
+                       "start": 16,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "moisture_min",
+                       "start": 20,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "moisture_max",
+                       "start": 24,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "moisture_average",
+                       "start": 28,
+                       "length": 4,
+                       "type": "int"
+                   }
+                ]
+            },
+            "0007":{
+                "name": "Gas & Smoke",
+                "payload_length": 16,
+                "values": [
+                   {
+                       "name": "level",
+                       "start": 16,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "level_min",
+                       "start": 20,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "level_max",
+                       "start": 24,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "level_average",
+                       "start": 28,
+                       "length": 4,
+                       "type": "int"
+                   }
+                ]
+            }
+        }
+    },
+    "sigfox":{
+        "codes_size": 8,
+        "codes":[
+               {
+                   "name": "experimentation",
+                   "start": 0,
+                   "length": 2,
+                   "type": "string"
+               },
+               {
+                   "name": "device_code",
+                   "start": 2,
+                   "length": 2,
+                   "type": "string"
+               },
+               {
+                   "name": "battery",
+                   "start": 4,
+                   "length": 2,
+                   "type": "float",
+                   "factor": 10
+               },
+               {
+                   "name": "sensor_code",
+                   "start": 6,
+                   "length": 2,
+                   "type": "string"
+               }
+            ],
+        "sensors":{
+            "01":{
+                "name": "Temperature & Humidity",
+                "payload_length": 16,
+                "values": [
+                   {
+                       "name": "temperature",
+                       "start": 8,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "humidity",
+                       "start": 12,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "temperature_min",
+                       "start": 16,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "temperature_max",
+                       "start": 20,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   }
+               ]
+            },
+            "02":{
+                "name": "Barometer",
+                "payload_length": 16,
+                "values": [
+                   {
+                       "name": "pressure",
+                       "start": 8,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "temperature",
+                       "start": 12,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "pressure_min",
+                       "start": 16,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "pressure_max",
+                       "start": 20,
+                       "length": 4,
+                       "type": "int"
+                   }
+                ]
+            },
+            "03":{
+                "name": "Water level",
+                "payload_length": 8,
+                "values": [
+                   {
+                       "name": "immersed",
+                       "start": 8,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "immersed_counter",
+                       "start": 12,
+                       "length": 4,
+                       "type": "int"
+                   }
+                ]
+            },
+            "04":{
+                "name": "GPS",
+                "payload_length": 16,
+                "values": [
+                ]
+            },
+            "05":{
+                "name": "Ultrasonic_ranger",
+                "payload_length": 16,
+                "values": [
+                   {
+                       "name": "distance",
+                       "start": 8,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "passages",
+                       "start": 12,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "distance_min",
+                       "start": 16,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   },
+                   {
+                       "name": "distance_max",
+                       "start": 20,
+                       "length": 4,
+                       "type": "float",
+                       "factor": 100
+                   }
+                ]
+            },
+            "06":{
+                "name": "Soil moisture",
+                "payload_length": 16,
+                "values": [
+                   {
+                       "name": "moisture",
+                       "start": 8,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "moisture_min",
+                       "start": 12,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "moisture_max",
+                       "start": 16,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "moisture_average",
+                       "start": 20,
+                       "length": 4,
+                       "type": "int"
+                   }
+                ]
+            },
+            "07":{
+                "name": "Gas & Smoke",
+                "payload_length": 16,
+                "values": [
+                   {
+                       "name": "level",
+                       "start": 8,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "level_min",
+                       "start": 12,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "level_max",
+                       "start": 16,
+                       "length": 4,
+                       "type": "int"
+                   },
+                   {
+                       "name": "level_average",
+                       "start": 20,
+                       "length": 4,
+                       "type": "int"
+                   }
+                ]
+            }
+        }
+    }
+}

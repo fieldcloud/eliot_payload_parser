@@ -1,0 +1,13 @@
+{
+    "server": {
+        "url": "127.0.0.1",
+        "port": 5001,
+        "threaded": 1
+    },
+    "log":{
+        "file": "./eliot.log",
+        "maxBytes": 10000,
+        "lvl": 20
+    }
+}
+
